@@ -449,7 +449,7 @@ p {
   flex-direction: column;
   padding-left: 15%; 
   justify-content: space-around; 
-  overflow-y:scroll
+  overflow:hidden;
 }
 
 
@@ -711,7 +711,12 @@ footer::before {
 }
 
 
-
+/* --- SCROLL GALERIAS --- */
+@media(max-width: 1280px){
+.right-content-layout {
+  overflow-y:scroll
+}
+}
 
 /* --- RESPONSIVE TABLETA --- */
 @media(max-width: 850px){
@@ -1192,13 +1197,318 @@ inicio_section{
 
         }
 
+}
+
+/* --- RESPONSIVE MOVIL ESTRECHO --- */
+
+@media(max-width: 428px){
+
+  .header_center {
+  font-size: 0.6rem;
+  gap: 0.5rem;
+}
+
+.header_iconos {
+  font-size: 1rem;
+  margin-left: 1vh;
+}
+
+.inicio_section{
+  margin-top: 9vh;
+  height: 30vh;
+  width: 100%;               
+
+}
+
+.inicio_section h1{
+  color: white;
+  font-size: 5vh;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: normal;
+}
+
+.inicio_section h2{
+  color: white;
+  font-size: 3vh;
+  font-family: "Goldman", sans-serif;
+  font-weight: bold;
+}
+
+.red-section {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 0vh 5vh;
+  height: 33vh;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
 
 
+.portfolio-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: auto;              
+  height: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0.4vh;
+  padding-right: 0.4vh;
+  z-index: 3;
+}
+
+.portfolio-bar span {
+  color: white;
+  font-size: 2.7vh;
+  font-family: "Special Gothic Expanded One", sans-serif;        
+  font-weight: 700;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  
+  align-items: center;
+  justify-content: center;
+
+  
+}
+
+.red-section h1 {
+  font-size: 70vh;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 900;
+  line-height: 0.5;
+  color: white;
+  transform: perspective(40vh) rotateY(50deg);
+  transform-origin: left center;
+  margin-left: -8vh;
+  
+  align-items: center;
+  justify-content: center;
+
+}
+
+.red-section nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2vw;
+  margin-top: -5vh;
+  flex-wrap: wrap;
+  margin-right: -4.5vh;
+}
+
+.red-section nav a {
+  color: #fff;
+  font-family: "Goldman", sans-serif;
+  font-weight: 500;
+  font-size: 1.6vh;
+  text-decoration: none;
+  transition: 0.2s;
+
+}
+
+.red-section nav a:hover {
+  font-size:  1.9vh;
+}
+
+.section_number {
+  font-size: 6.4vh; 
+}
+
+.section_text {
+  margin-bottom: 1vh;
+
+}
+
+.section_title {
+  font-size: 2.8vh; 
+  letter-spacing: 3px;
+  margin-bottom: 0; 
+
+}
+
+.section_subtitle_red {
+  font-size: 1.2vh; 
+  letter-spacing: 1px;
+}
+
+.section_subtitle_gray {
+  font-size: 1.4vh; 
+  color: #979797;
+  font-family: "Zen Dots", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  height: auto;
+}
+
+.container_galeriavideo {
+  width: 100%;
+  max-height: 30vh;
+  align-items: center;
+}
+
+.content-block_gray {
+  padding: 8vh 5vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.container_Neoni {
+  height: 60vh;
+  background-image: none;
+  background-size: contain;
+  background-position: left;
+  margin-bottom: 8vh; 
+}
+
+.container_Arcane { 
+  height: 60vh; 
+  background-image: none;
+  background-size: contain;
+  background-position: left;
+  margin-bottom: 8vh; 
+}
 
 
+.container_Holo {  
+  height: 60vh;
+  background-image: none;
+  background-size: contain;
+  background-position: left; 
+  margin-bottom: 8px; 
+}
+
+.Render_Neoni {
+  
+  height: 100%; 
+  width: 21vh;
+  background-image: url('images/3d/neoni/neoni full body.png');
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.Render_Arcane {
+  
+  height: 100%; 
+  width: 21vh;
+  background-image: url('images/3d/arcane/arcane render.png');
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.Render_Holo {
+  
+  height: 100%; 
+  width: 21vh;
+  background-image: url('images/3d/holo/holo_render2.png');
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.right-content-layout {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  padding-left: 15%; 
+  justify-content: space-around; 
+  overflow-y:scroll
+}
+
+.title_about {
+  font-size: 3.3vh; 
+  font-weight: 400;
+  letter-spacing: 3.5px;
+  margin-bottom: 0; 
+}
+
+.container_about {
+  margin: 5vh auto; 
+
+}
+ 
+.header_about {
+    gap: 2vw;                 
+}
+
+.profile_circle {
+ width: 12vh;              
+    height: 12vh;
+    min-width: 80px;         
+    min-height: 80px;
+    background-color: #9e9e9e; 
+    border-radius: 50%;        
+    flex-shrink: 0;            
+    
+    background-image: url('images/2d/pfp/pfp1.png'); 
+    background-size: cover;
+    background-position: center;
+        }
+
+.profile_info {
+  display: flex;
+    flex-direction: column;    
+    justify-content: flex-start;   
+        }
+
+        .profile_info h1 {
+            margin: 0;
+            font-size: 4vh; 
+            margin-bottom: 0.5vh;
+            font-family: "Special Gothic Expanded One", sans-serif;
+            font-weight: 400;
+        }
+
+        .profile_info p {
+            margin: 0;
+            font-size: 1.6vh; 
+            font-family: "Zen Dots", sans-serif;
+            color: #EE0D39;
+        }
+
+        .about_me_section {
+           
+            color: black;
+            padding-top: 2%; 
+            font-family: "Special Gothic Expanded One", sans-serif;
+            font-size: 2vh;
+            max-width: 120vh;
 
 
+        }
 
+        .about_me_section h2 {
+            margin-top: 0;
+            font-size: 2.5vh; 
+            margin-bottom: 1.5vh;
+            font-family: "Special Gothic Expanded One", sans-serif;
+        }
+
+        .about_me_section ul {
+            list-style: disc;
+            margin-left: 3%; 
+            padding: 0;
+            font-size: 2.5vh; 
+            margin-bottom: 2vh;
+            font-family: "Special Gothic Expanded One", sans-serif;
+
+        }
+
+        .about_me_section li {
+            margin-bottom: 3vh;
+            font-family: "Special Gothic Expanded One", sans-serif;
+            font-weight: 500;
+        }
+
+        .contact_section {
+            font-size: 2.5vh; 
+            font-family: "Special Gothic Expanded One", sans-serif;
+
+        }
 
 
 
@@ -1921,7 +2231,7 @@ inicio_section{
 
     <div class="skill-item">
         <div class="skill-header">
-            <span class="skill-title">Suite Adobe</span>
+            <span class="skill-title">Adobe Suite</span>
             <span class="skill-percentage">90%</span>
         </div>
         <div class="skill-bar-bg">
