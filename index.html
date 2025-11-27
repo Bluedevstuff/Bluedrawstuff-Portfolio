@@ -890,13 +890,17 @@ inicio_section{
 /* --- RESPONSIVE MOVIL --- */
 @media(max-width: 550px){
 
+.header_center a .portfolio-long {
+  display: none; /* Oculta la palabra 'Portfolio ' en dispositivos móviles */
+}
+
 .header_center {
-  font-size: 0.7rem;
-  gap: 0.5rem;
+  font-size: 1rem;
+  gap: 2rem;
 }
 
 .header_iconos {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-left: 1vh;
 }
 
@@ -1204,12 +1208,12 @@ inicio_section{
 @media(max-width: 428px){
 
   .header_center {
-  font-size: 0.6rem;
-  gap: 0.5rem;
+  font-size: 0.9rem;
+  gap: 1.2rem;
 }
 
 .header_iconos {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-left: 1vh;
 }
 
@@ -1356,7 +1360,7 @@ inicio_section{
 }
 
 .container_Neoni {
-  height: 60vh;
+  height: 50vh;
   background-image: none;
   background-size: contain;
   background-position: left;
@@ -1364,7 +1368,7 @@ inicio_section{
 }
 
 .container_Arcane { 
-  height: 60vh; 
+  height: 50vh; 
   background-image: none;
   background-size: contain;
   background-position: left;
@@ -1373,7 +1377,7 @@ inicio_section{
 
 
 .container_Holo {  
-  height: 60vh;
+  height: 50vh;
   background-image: none;
   background-size: contain;
   background-position: left; 
@@ -1383,7 +1387,7 @@ inicio_section{
 .Render_Neoni {
   
   height: 100%; 
-  width: 21vh;
+  width: 19vh;
   background-image: url('images/3d/neoni/neoni full body.png');
   background-size: contain;
   background-position: left;
@@ -1393,7 +1397,7 @@ inicio_section{
 .Render_Arcane {
   
   height: 100%; 
-  width: 21vh;
+  width: 19vh;
   background-image: url('images/3d/arcane/arcane render.png');
   background-size: contain;
   background-position: left;
@@ -1403,7 +1407,7 @@ inicio_section{
 .Render_Holo {
   
   height: 100%; 
-  width: 21vh;
+  width: 19vh;
   background-image: url('images/3d/holo/holo_render2.png');
   background-size: contain;
   background-position: left;
@@ -1529,12 +1533,11 @@ inicio_section{
 <header>
   <div class="header_left"></div>
   <nav class="header_center">
-    <a href="#">Inicio</a>
-    <a href="#2d">Portfolio 2D</a>
-    <a href="#3d">Portfolio 3D</a>
-    <a href="#about">About</a>
-    
-  </nav>
+  <a href="#">Inicio</a>
+  <a href="#2d"><span class="portfolio-long">Portfolio </span>2D</a>
+  <a href="#3d"><span class="portfolio-long">Portfolio </span>3D</a>
+  <a href="#about">About</a>
+</nav>
 
   <div class="header_iconos">
     <a class="fa-brands fa-instagram" href="https://www.instagram.com/bluedrawstuff/" target="_blank"></a>
